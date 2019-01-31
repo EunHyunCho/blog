@@ -14,6 +14,7 @@ public class MainController {
     @GetMapping("/main")
     public String main(Model model, @RequestParam(name="page", required = false, defaultValue = "1")int page){
         model.addAttribute("name", "urstory");
+
         //list 추가해보기
         List<Book> list = new ArrayList<>();
         list.add(new Book("1234", "title1", "author1", 50));
